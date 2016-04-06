@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Practice</title>
+  </head>
+  <body>
+    <section ng-controller="mainCtrl as main">
+      <input ng-model="main.name"><br>
+      <p ng-show="main.name"></p>
+      {{ main.name.save }}<br>
+      <button ng-click="main.addName(main.name)">Create Sentence</button>
+      <button ng-click="main.deleteInput(main.name)">Delete</button>
+    </section>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
